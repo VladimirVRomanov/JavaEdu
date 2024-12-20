@@ -8,12 +8,12 @@ public class Lesson2Task1 {
 }
 
 class VendingMachine {
-    privateDrink[] drinks = { new Drink("Вода", 10),
-                              new Drink("Чай", 25),
-                              new Drink("Квас", 50),
-                              new Drink("Кола", 90),
-                              new Drink("Кофе", 100)
-                            };
+    private Drink[] drinks = { new Drink("Вода", 10),
+                               new Drink("Чай", 25),
+                               new Drink("Квас", 50),
+                               new Drink("Кола", 90),
+                               new Drink("Кофе", 100)
+                             };
     private int balance;
 
     public void run() {
