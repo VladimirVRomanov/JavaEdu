@@ -8,12 +8,12 @@ public class Lesson2Task1 {
 }
 
 class VendingMachine {
-    Drink[] drinks = {  new Drink("Вода", 10),
-                        new Drink("Чай", 25),
-                        new Drink("Квас", 50),
-                        new Drink("Кола", 90),
-                        new Drink("Кофе", 100)
-                     };
+    privateDrink[] drinks = { new Drink("Вода", 10),
+                              new Drink("Чай", 25),
+                              new Drink("Квас", 50),
+                              new Drink("Кола", 90),
+                              new Drink("Кофе", 100)
+                            };
     private int balance;
 
     public void run() {
@@ -95,7 +95,7 @@ class VendingMachine {
             return;
         }
         balance -= drinks[numberOfDrink].getPrice();
-        System.out.printf("\nВы выбрали \"%s\". Возьмите Ваш напиток.", drinks[numberOfDrink].getName());
+        System.out.printf("\nВы выбрали напиток \"%s\". Возьмите Ваш напиток.", drinks[numberOfDrink].getName());
         showBalance();
     }
     private void getRestOfMoney() {
